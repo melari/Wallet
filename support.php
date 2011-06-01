@@ -21,4 +21,10 @@ function endsWith($haystack, $needle)
     $start  = $length * -1; //negative
     return (substr($haystack, $start) === $needle);
 }
+
+//Checks if the file request does not leave the directory.
+function isClean($dir)
+{
+	return (strstr($dir, "//") === false);
+}
 ?>
