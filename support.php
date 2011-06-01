@@ -25,6 +25,6 @@ function endsWith($haystack, $needle)
 //Checks if the file request does not leave the directory.
 function isClean($dir)
 {
-	return !(strstr($dir, "//") === false);
+	return strlen(strstr($dir, "/")) == 0;
 }
 ?>
