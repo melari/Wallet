@@ -6,4 +6,19 @@ function redirect($r_url)
 	$a = "Location: " . $r_url;
 	header($a);
 }
+
+//Checks if haystack begins with needle
+function startsWith($haystack, $needle)
+{
+    $length = strlen($needle);
+    return (substr($haystack, 0, $length) === $needle);
+}
+
+//Checks if haystack ends with needle
+function endsWith($haystack, $needle)
+{
+    $length = strlen($needle);
+    $start  = $length * -1; //negative
+    return (substr($haystack, $start) === $needle);
+}
 ?>
