@@ -2,6 +2,7 @@
 include 'constants.php';
 include 'support.php';
 include 'secure.php';
+include 'loaded.php';
 
 if (!isset($_GET['q']))
 {
