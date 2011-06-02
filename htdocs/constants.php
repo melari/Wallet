@@ -6,4 +6,5 @@ $__APP_NAME = "Wallet";
 
 $__NO_FILES_FOUND = "[No Results]";
 $__ARCHIVE_OPEN_FAILED = "[Failed to open archive]";
+$__FILE_NOT_FOUND = "File does not exist.";
 ?>
