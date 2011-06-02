@@ -8,7 +8,12 @@ if (!isset($_GET['q']))
 	$_GET['q'] = "";
 }
 
-if ($handle = opendir($__ARCHIVE_LOCATION))
+$subDir = substr($_GET['q'], 0, 4);
+$dir = $__ARCHIVE_LOCATION . $subDir . "/";
+
+if (!is_dir($dir)) { echo($__ARCHIVE_OPEN_FAILED); exit;}
+
+if ($handle = opendir($dir))
 {
 	echo("Matched Files:<br />\n");
 	$count = 0;
@@ -27,7 +32,7 @@ if ($handle = opendir($__ARCHIVE_LOCATION))
 }
 else
 {
-	echo("Failed to open archive.");
+	echo($__ARCHIVE_OPEN_FAILED);
 }
 
 ?> 
