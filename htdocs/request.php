@@ -18,6 +18,6 @@ $filename= $dir . $_GET['file'];
 
 if (!file_exists($filename)) { redirect("message.php?mes=" . $__FILE_NOT_FOUND); exit; }
 
-header("Content-disposition: attachment;filename=$filename");
+header("Content-disposition: attachment;filename=" . $_GET['file']);
 readfile($filename);
 ?>
