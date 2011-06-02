@@ -1,1 +1,10 @@
-Your files should go in this directory
+This is the default location of the archive. You can change the location by modifying $__ARCHIVE_LCATION in constants.php.
+
+
+The format of the archive is as follows:
+-No actual files are in the root directory.
+-Files are sorted by the first 4 characters of the file name.
+
+For example:
+100024.xls should reside in $__ARCHIVE_LOCATION/1000/100024.xls
+984523-01Rev02.pdf should reside in $__ARCHIVE_LOCATION/9845/984523-01Rev02.pdf
