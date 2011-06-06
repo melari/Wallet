@@ -1,5 +1,5 @@
 <?php
 include 'constants.php';
 
-echo("<strong><center>" . $__APP_NAME . "</center></strong>");
+echo("<strong><center>" . $__APP_NAME . " is currently Online.</center></strong>");
 ?>
